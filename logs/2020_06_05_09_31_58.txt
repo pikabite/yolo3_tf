@@ -1,0 +1,1 @@
+epoch;iteration;total_loss;bbox_xy_loss;bbox_wh_loss;objness_loss;class_loss

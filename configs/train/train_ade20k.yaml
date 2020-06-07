@@ -1,0 +1,28 @@
+name : daeyoun.kim
+class : Superduper high class in the world
+gold : not much
+height : around 2m I guess
+dataset : ade20k
+class_number : 115
+batch_size : 50
+shuffle : True
+image_shape : [416, 416, 3]
+learning_rate : 0.1
+lr_decaying_rate : 0.8
+lr_decaying_interval : 1
+saving_interval : 10
+gpu_indices : "1"
+dataset_path : "/media/4tb_1/outsourced_dataset/ade20k"
+log_dir : ./logs/
+present_epoch : 1
+epoch : 20
+weight_store_path : "./weights/coco/"
+is_training : True
+
+lambda_bbox : 5.0
+lambda_obj : 3.0
+lambda_noobj : 0.5
+
+# create anchor roughly
+# use coco clusters
+clusters : [[10, 13], [16, 30], [33, 23], [30, 61], [62, 45], [59, 119], [116, 90], [156, 198], [373, 326]]

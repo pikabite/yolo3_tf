@@ -1,0 +1,28 @@
+name : daeyoun.kim
+class : Superduper high class in the world
+gold : not much
+height : around 2m I guess
+dataset : coco
+class_number : 90
+batch_size : 25
+shuffle : True
+image_shape : [416, 416, 3]
+learning_rate : 0.0001
+lr_decaying_rate : 0.95
+lr_decaying_interval : 5
+saving_interval : 5
+validation_interval : 10
+gpu_indices : "0"
+dataset_path : /datasets/object_detection/coco
+log_dir : ./logs/
+present_epoch : 0
+epoch : 40
+weight_store_path : ./weights/coco/
+is_training : True
+
+lambda_bbox : 5.0
+lambda_obj : 1.0
+lambda_noobj : 0.01
+
+# use coco clusters
+clusters : [[10, 13], [16, 30], [33, 23], [30, 61], [62, 45], [59, 119], [116, 90], [156, 198], [373, 326]]
